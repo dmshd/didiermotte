@@ -1,0 +1,365 @@
+/* master.css */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+html body {
+    height:100vh;
+}
+
+html { 
+  margin:0;
+  padding:0;
+  background: url("../../public/img/NY_docks_o.jpg") no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+header, footer {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+footer {
+	background-color: #272727;
+	color: white;
+	font-size: 0.7em;
+}
+footer a {
+	color: white;
+	text-decoration: ;
+}
+footer p {
+	margin: 10px;
+}
+
+.credit {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.firstcredit {
+	font-size: 1.1em; 
+}
+
+footer a {
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+	color: white;
+}
+
+a:hover {
+	border-bottom: 0;
+	font-weight: bold;
+
+}
+
+/*center tools*/
+.flex {
+	display: flex;
+}
+
+.flexhvcenter {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.hor-center-div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.both-centering {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+nav {
+	position: fixed;
+	z-index: 1;
+}
+
+#branding {
+	z-index: 1;
+	position: fixed;
+	margin-top: 40px;
+}
+
+
+
+#blackbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #272727;
+    color: #F7F7F7;
+    border-bottom: 1px solid #454444 !important;
+    width: 100%;
+    height: 40px;
+}
+
+#branding {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 15px;
+	background-color: #272727;
+	width: 100%;
+	height: 190px;
+}
+
+#tagline {
+	color: white;
+	font-size: 0.8em;
+	margin-left: 5px;
+}
+
+#contact-info {
+	text-align: center;
+	font-size: 0.8em;
+	margin: 10px 0 20px 0;
+	color: white;
+}
+#contact-info a {
+	color: white;
+
+}
+
+#menu-menu-principal li a {
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.5em;
+	font-weight: bold;
+	background-color: #222;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin: 4px;
+	padding: 8px;
+	color: white;
+	width: auto;
+	border: 1px solid #222;
+}
+
+#menu-menu-principal li a:hover {
+	transition: background-color 0.2s ease;
+	background-color: #f7f7f7;
+	color: #222;
+}
+
+#menu-menu-principal li {
+	list-style-type: none;
+}
+
+#menu-menu-principal li a {
+	border: 1px solid lightgrey;
+}
+#didier-motte-logo {
+	width: 230px;
+	height: 75px;
+}
+.stock {
+	margin-top: 230px;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	flex-direction: column;
+	background-color: #f7f7f7;
+	width: 100%;
+	height: auto;
+}
+.stockphoto {
+	width: 232px;
+	height: 250px;
+}
+
+h1, #fouille {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 1.4em;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+hr {
+	display: block;
+	background-image: url('../img/separator.png');
+	height: 11px;
+	border: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#fouille {
+	font-size: 0.8em;
+	display: block;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.stockform {
+	margin-bottom: 40px;
+}
+
+.stockform input[type="text"] {
+	width: 270px;
+	height: 30px;
+}
+
+.stockform input[type="button"] {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin: 4px;
+	padding: 4px;
+	background-color: #222;
+	color: white;
+	width: auto;
+	border: 1px solid #222;
+	font-size: 0.7em;
+	font-weight: bold;
+	height: 30px;
+	width: 100px;
+	vertical-align: middle;
+	text-align: center;
+}
+.stockform input[type="button"]:hover {
+	transition: background-color 0.2s ease;
+	background-color: #f7f7f7;
+	color: #222;
+	cursor: pointer;
+}
+input::placeholder {
+	text-indent: 5px;
+	font-size: 0.8em;
+	opacity: 0.6;
+}
+
+ul.stockwrapper li, li.stockitem img {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+li.stockitem img:hover {
+	transition: transform .2s; 
+	transform: scale(1.2);
+	cursor: pointer;
+}
+ 
+.ofhidden {
+	overflow: hidden;
+	border: 0;
+}
+.roundcorner {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+ul.stockwrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+ul.stockwrapper li {
+	list-style: none;
+	background-color: #222;
+	padding: 5px;
+	margin: 10px;
+	overflow: hidden;
+}
+
+
+li.stockitem p {
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 0.8em;
+	margin-bottom: 6px;
+}
+
+@media all and (max-width: 480px) {
+
+	#branding {
+		height: auto;
+	}
+
+	#menu-menu-principal {
+	display: flex;
+	flex-direction: column;
+	}
+
+	#menu-menu-principal li a {
+	display: block;
+	margin: 5px;
+	text-align: center;
+	width: 150px;
+	}
+
+	#menu3 {
+		margin-bottom: 20px;
+	}
+
+	.stockform {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.stockform input[type="text"] {
+	width: 100%
+	height: 30px;
+	}
+
+	.stockform input[type="button"] {
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		margin: 4px;
+		padding: 4px;
+		background-color: #222;
+		color: white;
+		width: 100%;
+		border: 1px solid #222;
+		font-size: 0.7em;
+		font-weight: bold;
+		height: 30px;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.stockform input[type="button"]:hover {
+		transition: background-color 0.2s ease;
+		background-color: #f7f7f7;
+		color: #222;
+		cursor: pointer;
+	}
+
+	input::placeholder {
+		text-align: center;
+	text-indent: 5px;
+	font-size: 0.8em;
+	opacity: 0.6;
+	}
