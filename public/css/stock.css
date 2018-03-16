@@ -6,10 +6,31 @@
 	margin: 0;
 }
 
-
+hr {
+	display: block;
+	background: url(../img/separator.png);
+	margin: 50px auto 50px auto;
+	height: 11px;
+	width: 100%;
+	border: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 html body {
     height:100vh;
+}
+
+a {
+	color: #222;
+}
+
+a:hover {
+	color: #222;
+}
+
+a:visited {
+	color: #333;
 }
 
 html { 
@@ -57,6 +78,10 @@ footer a {
 	color: white;
 }
 
+footer a:visited {
+	color: #999;
+}
+
 a:hover {
 	border-bottom: 0;
 	font-weight: bold;
@@ -88,11 +113,11 @@ a:hover {
 
 nav {
 	position: fixed;
-	z-index: 1;
+	z-index: 15;
 }
 
 #branding {
-	z-index: 1;
+	z-index: 15;
 	position: fixed;
 	margin-top: 40px;
 }
@@ -132,6 +157,7 @@ nav {
 	margin: 10px 0 20px 0;
 	color: white;
 }
+
 #contact-info a {
 	color: white;
 
@@ -168,23 +194,66 @@ nav {
 #menu-menu-principal li a {
 	border: 1px solid lightgrey;
 }
+
 #didier-motte-logo {
 	width: 230px;
 	height: 75px;
 }
-.stock {
+
+
+.pnmenu {
+	margin-top: 35px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.ul-none {
+	text-decoration: none;
+}
+
+.pn-menu-active {
+	text-decoration: underline;
+}
+
+
+.contact {
 	margin-top: 230px;
 	display: flex;
-	/*justify-content: center;*/
 	align-items: center;
 	flex-direction: column;
 	background-color: #f7f7f7;
 	width: 100%;
 	height: auto;
 }
-.stockphoto {
-	width: 232px;
-	height: 250px;
+.contact-article {
+	min-width: 320px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.adresse {
+	line-height: 1.5em;
+}
+
+#le_magasin {
+margin-right: auto; /* aligner le flex child à left */
+font-weight: normal;
+margin-bottom: 30px;
+font-size: 1.3em;
+}
+
+#didiermaps {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.contact-fb-cta {
+	margin-top: 10px;
+}
+
+#contact-contact-info {
+	line-height: 2em;
 }
 
 h1, #fouille {
@@ -196,16 +265,6 @@ h1 {
 	font-size: 1.4em;
 	margin-top: 40px;
 	margin-bottom: 40px;
-}
-
-hr {
-	display: block;
-	background-image: url('../img/separator.png');
-	height: 11px;
-	border: 0;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
 }
 
 #fouille {
@@ -224,7 +283,7 @@ hr {
 	height: 30px;
 }
 
-.stockform input[type="button"] {
+.stockform input[type="button"], a.button {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -241,12 +300,50 @@ hr {
 	vertical-align: middle;
 	text-align: center;
 }
-.stockform input[type="button"]:hover {
+.stockform input[type="button"]:hover, a.button:hover {
 	transition: background-color 0.2s ease;
 	background-color: #f7f7f7;
 	color: #222;
 	cursor: pointer;
 }
+
+.catalogue h2 {
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	margin-bottom: 40px;
+}
+
+.cat-wrapper {
+	-webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+	-webkit-column-count: 4; /* Chrome, Safari, Opera */
+   	-moz-column-count: 4; /* Firefox */
+    column-count: 4;
+	-webkit-column-rule: 1px solid #999; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid #999; /* Firefox */
+    column-rule: 1px solid #999;
+}
+
+.cat-wrapper li {
+	margin: 0px 5px 15px 5px;
+	height: 20px;
+	border-bottom: 1px solid #999;
+	font-size: 0.7em;
+}
+
+.cat-wrapper a {
+	text-decoration: none;
+}
+
+
+.cat-item {
+	text-align: left;
+	list-style: none;
+}
+
 input::placeholder {
 	text-indent: 5px;
 	font-size: 0.8em;
@@ -259,16 +356,12 @@ ul.stockwrapper li, li.stockitem img {
 	border-radius: 4px;
 }
 
-li.stockitem img:hover {
+li.stockitem img.hover:hover {
 	transition: transform .2s; 
 	transform: scale(1.2);
 	cursor: pointer;
 }
- 
-.ofhidden {
-	overflow: hidden;
-	border: 0;
-}
+
 .roundcorner {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -297,6 +390,62 @@ li.stockitem p {
 	padding: 0;
 	font-size: 0.8em;
 	margin-bottom: 6px;
+}
+
+.stock {
+	margin-top: 230px;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	flex-direction: column;
+	background-color: #f7f7f7;
+	width: 100%;
+	height: auto;
+}
+
+.stockphoto {
+	width: 232px;
+	height: 250px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.vendu {
+	width: 231px;
+	height: 250px;
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
+}
+
+.ofhidden {
+	position: relative;
+  	top: 0;
+  	left: 0;
+	overflow: hidden;
+	border: 0;
+}
+@media all and (max-width: 769px) {
+	.cat-wrapper {
+	-webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+   	-moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	}
+}
+@media all and (max-width: 560px) {
+	.cat-wrapper {
+	-webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+   	-moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	}
 }
 
 @media all and (max-width: 480px) {
@@ -359,7 +508,10 @@ li.stockitem p {
 
 	input::placeholder {
 		text-align: center;
-	text-indent: 5px;
-	font-size: 0.8em;
-	opacity: 0.6;
+		text-indent: 5px;
+		font-size: 0.8em;
+		opacity: 0.6;
+	}
+	.contact {
+		margin-top: 293.04px;
 	}
