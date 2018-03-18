@@ -11,11 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="public/css/master.css" media="screen">
  </head>
  <body>
- 	<nav id="blackbar">
+ 	<nav id="blackbar-landing">
  			<p class="blackbarDescription"></p>
  	</nav>
  	<header>
-	 	<div id="branding">
+	 	<div id="branding-landing">
 	 		<a href="#"><img id="didier-motte-logo" src="public/img/didier-motte-logo.png" alt="Didier Motte logo" title="Didier Motte logo"></a>
 	 		<p id="tagline">Antiquités • Décoration • Aménagements d'intérieur</p>
 	 		<p id="contact-info">☎ <a href="#">+32 495/20.59.34</a></p>
@@ -26,14 +26,8 @@
 	 		</ul>
 	 	</div>
  	</header>
- 	<section class="page-blanche">
- 		<h1>Le Stock</h1>
- 		<form action="">
- 			<label id="fouille">Fouiller le stock</label>
- 			<input type="text" name="fouille" placeholder="Exemple: table">
- 			<input type="submit" name="submit_fouille" value="recherche">
- 		</form>
- 		<h2>Derniers objets</h2>
- 	</section>
+
+	<!-- <?php include('view/stock.view.php'); ?> -->
+
  </body>
  </html>
