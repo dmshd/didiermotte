@@ -14,8 +14,8 @@
  	<nav id="blackbar-landing">
  			<p class="blackbarDescription"></p>
  	</nav>
- 	
- <?php include('view/branding.landing.view.php'); ?>
+
+ 	<?php include('view/branding.landing.view.php'); ?>
 
 	<!-- <?php include('view/stock.view.php'); ?> -->
 
